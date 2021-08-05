@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 03 15:17:17 IST 2021</td>
+<td>Started on:</td><td>Thu Aug 05 13:28:17 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19122 ms)</td>
+<tr><td>Total time:</td><td>203 seconds (203634 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,18 +75,37 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='driver.Driver.executeTestcase()'><b>executeTestcase</b><br>Test class: driver.Driver<br>Parameters: org.testng.TestRunner@5ac86ba5</td>
+<td title='driver.Driver.executeTestcase()'><b>executeTestcase</b><br>Test class: driver.Driver<br>Parameters: org.testng.TestRunner@70dd7e15</td>
 <td><div><pre>java.lang.reflect.InvocationTargetException
 	at driver.Driver.executeTestcase(Driver.java:104)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.AssertionError: The following asserts failed:
-	expected [Summary of Pa] but found [Summary of Patients]
-	at services.WebDriverServiceImpl.softAssertVerification(WebDriverServiceImpl.java:775)
-	at pages.Summary.assertSummaryList(Summary.java:65)
-	at testcases.General.TestCase_01.loginWDC(TestCase_01.java:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/div[@id=&apos;main&apos;]/div[@id=&apos;patientReviewMainWrapper&apos;]/div[@id=&apos;mainSection&apos;]/div[@id=&apos;dijit_layout_ContentPane_0&apos;]/div[@id=&apos;measureSetTree&apos;]/div[@id=&apos;MeasureSetTree&apos;]/div[@id=&apos;tmpdir__CheckBoxTreeNode_0&apos;]/div[2]/div[1]/div[1]/img[1]&quot;}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-1&apos;, revision: &apos;d1d3728cae&apos;, time: &apos;2019-04-24T13:42:21&apos;
+System info: host: &apos;Z3P3PUGAVS0034&apos;, ip: &apos;10.99.37.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: E:\sminu\AppData\Local\Temp...}, goog:chromeOptions: {debuggerAddress: localhost:51077}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10e31992fc7f898a54e819b5657ba118
+*** Element info: {Using=xpath, value=//body/div[@id=&apos;main&apos;]/div[@id=&apos;patientReviewMainWrapper&apos;]/div[@id=&apos;mainSection&apos;]/div[@id=&apos;dijit_layout_ContentPane_0&apos;]/div[@id=&apos;measureSetTree&apos;]/div[@id=&apos;MeasureSetTree&apos;]/div[@id=&apos;tmpdir__CheckBoxTreeNode_0&apos;]/div[2]/div[1]/div[1]/img[1]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:446)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:106)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:195)
+	at pages.Patientreview.choosepopulationtype(Patientreview.java:31)
+	at testcases.General.TestCase_01.loginWDC(TestCase_01.java:85)
 	... 37 more
-... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1680365850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1680365850'><pre>java.lang.reflect.InvocationTargetException
+... Removed 43 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1829194516", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1829194516'><pre>java.lang.reflect.InvocationTargetException
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -124,17 +143,42 @@ Caused by: java.lang.AssertionError: The following asserts failed:
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: java.lang.AssertionError: The following asserts failed:
-	expected [Summary of Pa] but found [Summary of Patients]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at services.WebDriverServiceImpl.softAssertVerification(WebDriverServiceImpl.java:775)
-	at pages.Summary.assertSummaryList(Summary.java:65)
-	at testcases.General.TestCase_01.loginWDC(TestCase_01.java:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/div[@id=&apos;main&apos;]/div[@id=&apos;patientReviewMainWrapper&apos;]/div[@id=&apos;mainSection&apos;]/div[@id=&apos;dijit_layout_ContentPane_0&apos;]/div[@id=&apos;measureSetTree&apos;]/div[@id=&apos;MeasureSetTree&apos;]/div[@id=&apos;tmpdir__CheckBoxTreeNode_0&apos;]/div[2]/div[1]/div[1]/img[1]&quot;}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-1&apos;, revision: &apos;d1d3728cae&apos;, time: &apos;2019-04-24T13:42:21&apos;
+System info: host: &apos;Z3P3PUGAVS0034&apos;, ip: &apos;10.99.37.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: E:\sminu\AppData\Local\Temp...}, goog:chromeOptions: {debuggerAddress: localhost:51077}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10e31992fc7f898a54e819b5657ba118
+*** Element info: {Using=xpath, value=//body/div[@id=&apos;main&apos;]/div[@id=&apos;patientReviewMainWrapper&apos;]/div[@id=&apos;mainSection&apos;]/div[@id=&apos;dijit_layout_ContentPane_0&apos;]/div[@id=&apos;measureSetTree&apos;]/div[@id=&apos;MeasureSetTree&apos;]/div[@id=&apos;tmpdir__CheckBoxTreeNode_0&apos;]/div[2]/div[1]/div[1]/img[1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:446)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:106)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:195)
+	at pages.Patientreview.choosepopulationtype(Patientreview.java:31)
+	at testcases.General.TestCase_01.loginWDC(TestCase_01.java:85)
 	... 37 more
 </pre></div></td>
-<td>18</td>
-<td>driver.Driver@51dcb805</td></tr>
+<td>203</td>
+<td>driver.Driver@272ed83b</td></tr>
 </table><p>
 </body>
 </html>

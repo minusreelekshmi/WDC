@@ -1,12 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.48 s <<< FAILURE! - in TestSuite
-driver.Driver.executeTestcase[org.testng.TestRunner@5ac86ba5](1)  Time elapsed: 18.816 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 206.102 s <<< FAILURE! - in TestSuite
+driver.Driver.executeTestcase[org.testng.TestRunner@70dd7e15](1)  Time elapsed: 203.308 s  <<< FAILURE!
 java.lang.reflect.InvocationTargetException
 	at driver.Driver.executeTestcase(Driver.java:104)
-Caused by: java.lang.AssertionError: 
-The following asserts failed:
-	expected [Summary of Pa] but found [Summary of Patients]
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//body/div[@id='main']/div[@id='patientReviewMainWrapper']/div[@id='mainSection']/div[@id='dijit_layout_ContentPane_0']/div[@id='measureSetTree']/div[@id='MeasureSetTree']/div[@id='tmpdir__CheckBoxTreeNode_0']/div[2]/div[1]/div[1]/img[1]"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'Z3P3PUGAVS0034', ip: '10.99.37.212', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: E:\sminu\AppData\Local\Temp...}, goog:chromeOptions: {debuggerAddress: localhost:51077}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10e31992fc7f898a54e819b5657ba118
+*** Element info: {Using=xpath, value=//body/div[@id='main']/div[@id='patientReviewMainWrapper']/div[@id='mainSection']/div[@id='dijit_layout_ContentPane_0']/div[@id='measureSetTree']/div[@id='MeasureSetTree']/div[@id='tmpdir__CheckBoxTreeNode_0']/div[2]/div[1]/div[1]/img[1]}
 	at driver.Driver.executeTestcase(Driver.java:104)
 

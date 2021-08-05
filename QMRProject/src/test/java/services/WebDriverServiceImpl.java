@@ -256,8 +256,8 @@ public class WebDriverServiceImpl extends WebDriverEvents implements WebDriverSe
 
 	public void click(WebElement ele,String field)  {
 		try {
-			//WebDriverWait wait = new WebDriverWait(getDriver(), 15);
-//			wait.until(ExpectedConditions.elementToBeClickable(ele));			
+			WebDriverWait wait = new WebDriverWait(getDriver(), 15);
+			wait.until(ExpectedConditions.elementToBeClickable(ele));			
 			ele.click();
 			setReport().log(Status.PASS,"Clicked on "+field, screenshotCapture());	
 		}

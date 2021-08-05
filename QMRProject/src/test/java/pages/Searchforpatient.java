@@ -11,7 +11,7 @@ public class Searchforpatient extends WebDriverServiceImpl {
 
 	public Searchforpatient chooseSearchPatient() throws InterruptedException {
         
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		WebElement searchPatient = getDriver().findElement(By.xpath("//div[contains(text(),'SEARCH')]"));
 
 		Actions a = new Actions(getDriver());

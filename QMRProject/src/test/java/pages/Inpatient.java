@@ -49,7 +49,7 @@ public class Inpatient extends WebDriverServiceImpl {
 		type(getDriver().findElement(By.id("admDate")), adDate, "admissionDate");
 		// Thread.sleep(5000);
 		getDriver().findElement(By.id("admDate")).sendKeys(Keys.TAB);
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		return this;
 	}
 
@@ -73,15 +73,16 @@ public class Inpatient extends WebDriverServiceImpl {
 		Thread.sleep(3000);
 		type(getDriver().findElement(By.xpath("//input[@id='dischDate']")), disDate, "dischargeDate");
 		getDriver().findElement(By.id("dischDate")).sendKeys(Keys.TAB);
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 
 		// Thread.sleep(5000);
 
 		return this;
 	}
    //To enter Discharge time
-	public Inpatient typeDischargeTime(String dDate) {
+	public Inpatient typeDischargeTime(String dDate) throws InterruptedException {
 		type(getDriver().findElement(By.xpath("//input[@id='dischTime']")), dDate, "Discharge date");
+		Thread.sleep(3000);
         return this;
 	}
 	//Select CCN Care settings
@@ -151,7 +152,7 @@ public class Inpatient extends WebDriverServiceImpl {
 	public Inpatient assertInpatient() throws InterruptedException {
 		assertVerification(getDriver().findElement(By.xpath("//table[@id='success']//td[2]//b")),"Success");
 	    //System.out.println(getDriver().findElement(By.xpath("//table[@id='success']//td[2]//b")).getText());
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 		return this;
 	}
 }

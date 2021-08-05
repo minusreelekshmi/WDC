@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>E:\sminu\Softwares\qmr-wdc-automation-master@f877eee8e3d\qmr-wdc-automation-master@f877eee8e3d\XMLFiles\testng.xml</span>
+                    <span>E:\sminu\git\WDC\QMRProject\XMLFiles\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="driver.Driver" class="method navigator-link" hash-for-method="executeTestcase(org.testng.TestRunner@5ac86ba5)">executeTestcase(org.testng.TestRunner@5ac86ba5)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="driver.Driver" class="method navigator-link" hash-for-method="executeTestcase(org.testng.TestRunner@70dd7e15)">executeTestcase(org.testng.TestRunner@70dd7e15)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -127,20 +127,39 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="executeTestcase(org.testng.TestRunner@5ac86ba5)">
-                  </a> <!-- executeTestcase(org.testng.TestRunner@5ac86ba5) -->
+                  <a name="executeTestcase(org.testng.TestRunner@70dd7e15)">
+                  </a> <!-- executeTestcase(org.testng.TestRunner@70dd7e15) -->
                   <span class="method-name">executeTestcase</span>
-                  <span class="parameters">(org.testng.TestRunner@5ac86ba5)</span>
+                  <span class="parameters">(org.testng.TestRunner@70dd7e15)</span>
                   <div class="stack-trace">java.lang.reflect.InvocationTargetException
 	at driver.Driver.executeTestcase(Driver.java:104)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.AssertionError: The following asserts failed:
-	expected [Summary of Pa] but found [Summary of Patients]
-	at services.WebDriverServiceImpl.softAssertVerification(WebDriverServiceImpl.java:775)
-	at pages.Summary.assertSummaryList(Summary.java:65)
-	at testcases.General.TestCase_01.loginWDC(TestCase_01.java:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/div[@id=&apos;main&apos;]/div[@id=&apos;patientReviewMainWrapper&apos;]/div[@id=&apos;mainSection&apos;]/div[@id=&apos;dijit_layout_ContentPane_0&apos;]/div[@id=&apos;measureSetTree&apos;]/div[@id=&apos;MeasureSetTree&apos;]/div[@id=&apos;tmpdir__CheckBoxTreeNode_0&apos;]/div[2]/div[1]/div[1]/img[1]&quot;}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-1&apos;, revision: &apos;d1d3728cae&apos;, time: &apos;2019-04-24T13:42:21&apos;
+System info: host: &apos;Z3P3PUGAVS0034&apos;, ip: &apos;10.99.37.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: E:\sminu\AppData\Local\Temp...}, goog:chromeOptions: {debuggerAddress: localhost:51077}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10e31992fc7f898a54e819b5657ba118
+*** Element info: {Using=xpath, value=//body/div[@id=&apos;main&apos;]/div[@id=&apos;patientReviewMainWrapper&apos;]/div[@id=&apos;mainSection&apos;]/div[@id=&apos;dijit_layout_ContentPane_0&apos;]/div[@id=&apos;measureSetTree&apos;]/div[@id=&apos;MeasureSetTree&apos;]/div[@id=&apos;tmpdir__CheckBoxTreeNode_0&apos;]/div[2]/div[1]/div[1]/img[1]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:446)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:106)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:195)
+	at pages.Patientreview.choosepopulationtype(Patientreview.java:31)
+	at testcases.General.TestCase_01.loginWDC(TestCase_01.java:85)
 	... 37 more
-... Removed 37 stack frames
+... Removed 43 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -149,7 +168,7 @@ Caused by: java.lang.AssertionError: The following asserts failed:
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\sminu\Softwares\qmr-wdc-automation-master@f877eee8e3d\qmr-wdc-automation-master@f877eee8e3d\XMLFiles\testng.xml</span>
+            <span class="header-content">E:\sminu\git\WDC\QMRProject\XMLFiles\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -202,12 +221,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'executeTestcase')
 data.setCell(0, 2, 'driver.Driver')
-data.setCell(0, 3, 18797);
+data.setCell(0, 3, 203285);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -241,16 +260,16 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">executeTestcase(org.testng.TestRunner@5ac86ba5)</span>
-                <span class="method-start">1231 ms</span>
+                <span class="method-name">executeTestcase(org.testng.TestRunner@70dd7e15)</span>
+                <span class="method-start">1292 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Reports([TestResult name=executeTestcase status=FAILURE method=Driver.executeTestcase(org.testng.ITestContex...)</span>
-                <span class="method-start">20036 ms</span>
+                <span class="method-start">204586 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20390 ms</span>
+                <span class="method-start">204968 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

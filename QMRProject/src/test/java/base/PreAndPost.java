@@ -76,7 +76,7 @@ public class PreAndPost extends WebDriverEvents {
 		tlDriver.set(driver);
 		getDriver().manage().window().maximize();
 		getDriver().get(URL);
-		getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		getDriver().manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
 
 	// Create the report path

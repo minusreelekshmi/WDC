@@ -60,9 +60,9 @@ public class Summary extends WebDriverServiceImpl{
 		return this;
 	}
 	public Summary assertSummaryList() throws InterruptedException {
-		//assertVerification(getDriver().findElement(By.xpath("//h3[contains(text(),'Summary of Patients')]")),"Summary of Patients");
+		assertVerification(getDriver().findElement(By.xpath("//h3[contains(text(),'Summary of Patients')]")),"Summary of Patients");
 		
-softAssertVerification(getDriver().findElement(By.xpath("//h3[contains(text(),'Summary of Patients')]")), "Summary of Pa");       
+        //softAssertVerification(getDriver().findElement(By.xpath("//h3[contains(text(),'Summary of Patients')]")), "Summary of Pa");       
 		Thread.sleep(3000);
 		return this;
 	}           

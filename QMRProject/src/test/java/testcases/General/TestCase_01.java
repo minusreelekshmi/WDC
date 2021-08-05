@@ -61,89 +61,89 @@ public class TestCase_01 {
 				.assertInpatient();
 
 //-------------------------------------------OUT PATIENT CREATION---------------------------------------------------------		  
-//		new Outpatient()
-//		        .chooseAddPatient()
-//				.chooseFacility(DataInputProvider.getCellData_ColName(iRowNumber, "facility", sDataSheetName))
-//				.typePatientIdAndMedicalRecordNumber(DataInputProvider.getCellData_ColName(iRowNumber, "patientId", sDataSheetName))
-//				//.typeMedicalRecordNumber(DataInputProvider.getCellData_ColName(iRowNumber, "medicalRecNumber", sDataSheetName))
-//				.typeEncounterDate(DataInputProvider.getCellData_ColName(iRowNumber, "admissionDate", sDataSheetName))
-//				.typeArrivalTime(DataInputProvider.getCellData_ColName(iRowNumber, "DisChargeTime", sDataSheetName))
-//				.typeBirthDate(DataInputProvider.getCellData_ColName(iRowNumber, "birthDate", sDataSheetName))
-//				.chooseSex(DataInputProvider.getCellData_ColName(iRowNumber, "sex", sDataSheetName))
-//				.chooseOPRace(DataInputProvider.getCellData_ColName(iRowNumber, "Race", sDataSheetName))
-//				.chooseOPHispanicEthinicity(DataInputProvider.getCellData_ColName(iRowNumber, "HispanicEthinicity", sDataSheetName))
-//				.chooseOPPaymentSource(DataInputProvider.getCellData_ColName(iRowNumber, "PaymentSource", sDataSheetName))
-//				.chooseOPPostalCode(DataInputProvider.getCellData_ColName(iRowNumber, "PostalCode", sDataSheetName))
-//				.chooseOPDischargeCode(DataInputProvider.getCellData_ColName(iRowNumber, "Discode", sDataSheetName))
-//				.chooseOPDischargeStatus(DataInputProvider.getCellData_ColName(iRowNumber, "Disstatus", sDataSheetName))
-//				.clickCheckBoxASR()
-//				.clickSave()
-//				.assertOutpatient();
+		new Outpatient()
+		        .chooseAddPatient()
+				.chooseFacility(DataInputProvider.getCellData_ColName(iRowNumber, "facility", sDataSheetName))
+				.typePatientIdAndMedicalRecordNumber(DataInputProvider.getCellData_ColName(iRowNumber, "patientId", sDataSheetName))
+				//.typeMedicalRecordNumber(DataInputProvider.getCellData_ColName(iRowNumber, "medicalRecNumber", sDataSheetName))
+				.typeEncounterDate(DataInputProvider.getCellData_ColName(iRowNumber, "admissionDate", sDataSheetName))
+				.typeArrivalTime(DataInputProvider.getCellData_ColName(iRowNumber, "DisChargeTime", sDataSheetName))
+				.typeBirthDate(DataInputProvider.getCellData_ColName(iRowNumber, "birthDate", sDataSheetName))
+				.chooseSex(DataInputProvider.getCellData_ColName(iRowNumber, "sex", sDataSheetName))
+				.chooseOPRace(DataInputProvider.getCellData_ColName(iRowNumber, "Race", sDataSheetName))
+				.chooseOPHispanicEthinicity(DataInputProvider.getCellData_ColName(iRowNumber, "HispanicEthinicity", sDataSheetName))
+				.chooseOPPaymentSource(DataInputProvider.getCellData_ColName(iRowNumber, "PaymentSource", sDataSheetName))
+				.chooseOPPostalCode(DataInputProvider.getCellData_ColName(iRowNumber, "PostalCode", sDataSheetName))
+				.chooseOPDischargeCode(DataInputProvider.getCellData_ColName(iRowNumber, "Discode", sDataSheetName))
+				.chooseOPDischargeStatus(DataInputProvider.getCellData_ColName(iRowNumber, "Disstatus", sDataSheetName))
+				.clickCheckBoxASR()
+				.clickSave()
+				.assertOutpatient();
 //----------------------------------------------PATIENT REVIEW---------------------------------------------------------		  
-//		   new Patientreview()
-//		      .choosePatientReview()
-//		      .choosepopulationtype()
-//		      .chooseRepFacility(DataInputProvider.getCellData_ColName(iRowNumber,"Facility",sDataSheetName))
-//		      .typeQuarterId(DataInputProvider.getCellData_ColName(iRowNumber,"Quarter",sDataSheetName))
-//		      .typePatientReview(DataInputProvider.getCellData_ColName(iRowNumber,"Patientreviewtype",sDataSheetName))
-//	          .clickBuildSummaryList()
-//	          .assertPatientReview();
-////-----------------------------------------------QUICK SEARCH---------------------------------------------------------		  
-//		new Searchforpatient()
-//		      .chooseSearchPatient()
-//		      .chooseFacilityId(DataInputProvider.getCellData_ColName(iRowNumber,"Facility",sDataSheetName))
-//		      .choosePatientident(DataInputProvider.getCellData_ColName(iRowNumber, "patientId", sDataSheetName))
-//		      .clickFindPatient()
-//		      .assertSearchforpatient();
-////-------------------------------------------------SEARCH FOR-------------------------------------------------------
-//		 new Searchforpatient()
-//		     .chooseSearchPatient()
-//		     .typePatId(DataInputProvider.getCellData_ColName(iRowNumber,"patientId",sDataSheetName))
-//		     .typeMedRNum(DataInputProvider.getCellData_ColName(iRowNumber,"medicalRecNumber",sDataSheetName))
-//	         .clickBuildSearch()
-//		     //.clickonpatientid()
-//		     .assertSearchforpatient2();
-////-----------------------------------------SEARCH FOR-BASED ON DATES------------------------------------------------		 
-//       new Searchforpatient()
-//            .chooseSearchPatient()
-//            .typeAdEncStartDate(DataInputProvider.getCellData_ColName(iRowNumber,"AdEncdate",sDataSheetName))
-//            .typeAdEncEndDate(DataInputProvider.getCellData_ColName(iRowNumber,"DisEncdate",sDataSheetName))
-//            .typeDisEncStartDate(DataInputProvider.getCellData_ColName(iRowNumber,"AdEncdate",sDataSheetName))
-//            .typeDisEncEndDate(DataInputProvider.getCellData_ColName(iRowNumber,"DisEncdate",sDataSheetName))
-//            .clickBuildSearch()
-//            //.clickonpatientid()
-//            .assertSearchforpatient2();
-////---------------------------------------------PATIENT DATA EXTRACT--------------------------------------------------
-//        new PatientDataExtract()
-//          .choosePatientDataExtract()
-//          .clickOnQuarter()
-//          .clickOnFacility()
-//          .clickOnFindPopulations()
-//          .clickOnPopulation()
-//          .clickOnFileType()
-//          .clickOnFileOptions()
-//          .clickOnRunReport()
-//          .assertPatineDataExtract();
-//// ------------------------------------------------HBIPS SENSUS-----------------------------------------------------           
-//		   new HbipsCensus()
-//		      .chooseHbipsCensus()
-//		      .chooseFacility(DataInputProvider.getCellData_ColName(iRowNumber,"Facility",sDataSheetName))
-//		      .chooseMonthYear(DataInputProvider.getCellData_ColName(iRowNumber,"Monthyear",sDataSheetName))
-//		      .choosecensusPupulation(DataInputProvider.getCellData_ColName(iRowNumber,"CensusPop",sDataSheetName))
-//              .clickSubmit()
-//              .assertHbipsCensus();
-////------------------------------------------------WEB BASED MEASURE--------------------------------------------		
-//		   new WebBasedMeasures()
-//		     .chooseWebBasedMeasures()
-//		     .chooseWBMFacility(DataInputProvider.getCellData_ColName(iRowNumber,"Facility",sDataSheetName))
-//		     //.chooseWBMPatientClass(sDataSheetName)
-//		     .chooseWBMPopulation(DataInputProvider.getCellData_ColName(iRowNumber,"Measures",sDataSheetName))
-//		     //.chooseWBMYear(sDataSheetName)
-//		     .chooseWBMQuarter(DataInputProvider.getCellData_ColName(iRowNumber,"Quarter",sDataSheetName))
-//		     //.chooseWBMMonths(sDataSheetName)
-//		     .clickBulidSummaryList()
-//		     .assertWebBasedSummaryList();
-//
+		   new Patientreview()
+		      .choosePatientReview()
+		      .choosepopulationtype()
+		      .chooseRepFacility(DataInputProvider.getCellData_ColName(iRowNumber,"Facility",sDataSheetName))
+		      .typeQuarterId(DataInputProvider.getCellData_ColName(iRowNumber,"Quarter",sDataSheetName))
+		      .typePatientReview(DataInputProvider.getCellData_ColName(iRowNumber,"Patientreviewtype",sDataSheetName))
+	          .clickBuildSummaryList()
+	          .assertPatientReview();
+//-----------------------------------------------QUICK SEARCH---------------------------------------------------------		  
+		new Searchforpatient()
+		      .chooseSearchPatient()
+		      .chooseFacilityId(DataInputProvider.getCellData_ColName(iRowNumber,"Facility",sDataSheetName))
+		      .choosePatientident(DataInputProvider.getCellData_ColName(iRowNumber, "patientId", sDataSheetName))
+		      .clickFindPatient()
+		      .assertSearchforpatient();
+//-------------------------------------------------SEARCH FOR-------------------------------------------------------
+		 new Searchforpatient()
+		     .chooseSearchPatient()
+		     .typePatId(DataInputProvider.getCellData_ColName(iRowNumber,"patientId",sDataSheetName))
+		     .typeMedRNum(DataInputProvider.getCellData_ColName(iRowNumber,"medicalRecNumber",sDataSheetName))
+	         .clickBuildSearch()
+		     //.clickonpatientid()
+		     .assertSearchforpatient2();
+//-----------------------------------------SEARCH FOR-BASED ON DATES------------------------------------------------		 
+       new Searchforpatient()
+            .chooseSearchPatient()
+            .typeAdEncStartDate(DataInputProvider.getCellData_ColName(iRowNumber,"AdEncdate",sDataSheetName))
+            .typeAdEncEndDate(DataInputProvider.getCellData_ColName(iRowNumber,"DisEncdate",sDataSheetName))
+            .typeDisEncStartDate(DataInputProvider.getCellData_ColName(iRowNumber,"AdEncdate",sDataSheetName))
+            .typeDisEncEndDate(DataInputProvider.getCellData_ColName(iRowNumber,"DisEncdate",sDataSheetName))
+            .clickBuildSearch()
+            //.clickonpatientid()
+            .assertSearchforpatient2();
+//---------------------------------------------PATIENT DATA EXTRACT--------------------------------------------------
+        new PatientDataExtract()
+          .choosePatientDataExtract()
+          .clickOnQuarter()
+          .clickOnFacility()
+          .clickOnFindPopulations()
+          .clickOnPopulation()
+          .clickOnFileType()
+          .clickOnFileOptions()
+          .clickOnRunReport()
+          .assertPatineDataExtract();
+// ------------------------------------------------HBIPS SENSUS-----------------------------------------------------           
+		   new HbipsCensus()
+		      .chooseHbipsCensus()
+		      .chooseFacility(DataInputProvider.getCellData_ColName(iRowNumber,"Facility",sDataSheetName))
+		      .chooseMonthYear(DataInputProvider.getCellData_ColName(iRowNumber,"Monthyear",sDataSheetName))
+		      .choosecensusPupulation(DataInputProvider.getCellData_ColName(iRowNumber,"CensusPop",sDataSheetName))
+              .clickSubmit()
+              .assertHbipsCensus();
+//------------------------------------------------WEB BASED MEASURE--------------------------------------------		
+		   new WebBasedMeasures()
+		     .chooseWebBasedMeasures()
+		     .chooseWBMFacility(DataInputProvider.getCellData_ColName(iRowNumber,"Facility",sDataSheetName))
+		     //.chooseWBMPatientClass(sDataSheetName)
+		     .chooseWBMPopulation(DataInputProvider.getCellData_ColName(iRowNumber,"Measures",sDataSheetName))
+		     //.chooseWBMYear(sDataSheetName)
+		     .chooseWBMQuarter(DataInputProvider.getCellData_ColName(iRowNumber,"Quarter",sDataSheetName))
+		     //.chooseWBMMonths(sDataSheetName)
+		     .clickBulidSummaryList()
+		     .assertWebBasedSummaryList();
+
 		   }
 //
 }
